@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="3dp"
+        android:text="일정 추가"
+        android:textColor="#8F8F8F"
+        app:layout_constraintBottom_toTopOf="@+id/title_Text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/title_Text"
+        android:layout_width="256dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/et_custom"
+        android:hint="일정 제목을 입력하세요."
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/EndDay_Text"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/StartDay_Text"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/et_custom"
+        android:ems="10"
+        android:padding="10dp"
+        android:text="시작 날짜"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/StartTime_Text"
+        app:layout_constraintEnd_toStartOf="@+id/EndDay_Text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_Text" />
+
+    <TextView
+        android:id="@+id/EndDay_Text"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/et_custom"
+        android:ems="10"
+        android:padding="10dp"
+        android:text="마지막 날짜"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/EndTime_Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/StartDay_Text"
+        app:layout_constraintTop_toBottomOf="@+id/title_Text" />
+
+    <TextView
+        android:id="@+id/StartTime_Text"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="49dp"
+        android:background="@drawable/et_custom"
+        android:ems="10"
+        android:text="00:00"
+        android:padding="10dp"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/EndTime_Text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StartDay_Text" />
+
+    <TextView
+        android:id="@+id/EndTime_Text"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="340dp"
+        android:background="@drawable/et_custom"
+        android:ems="10"
+        android:text="00:00"
+        android:padding="10dp"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/addDayBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/StartTime_Text"
+        app:layout_constraintTop_toBottomOf="@+id/EndDay_Text" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:text="위치"
+        android:textColor="#8F8F8F"
+        app:layout_constraintBottom_toTopOf="@+id/loc_Text"
+        app:layout_constraintStart_toStartOf="@+id/loc_Text"
+        app:layout_constraintTop_toBottomOf="@+id/StartTime_Text" />
+
+    <EditText
+        android:id="@+id/loc_Text"
+        android:layout_width="390dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/et_custom"
+        android:hint="장소를 입력하세요."
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="13dp"
+        android:text="내용"
+        android:textColor="#8F8F8F"
+        app:layout_constraintBottom_toTopOf="@+id/cmt_Text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loc_Text" />
+
+    <EditText
+        android:id="@+id/cmt_Text"
+        android:layout_width="390dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="54dp"
+        android:background="@drawable/et_custom"
+        android:hint="내용을 입력하세요."
+        android:padding="10dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/canDayBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/addDayBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="77dp"
+        android:text="저장"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/canDayBtn"
+        app:layout_constraintTop_toBottomOf="@+id/EndTime_Text" />
+
+    <Button
+        android:id="@+id/canDayBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="77dp"
+        android:text="취소"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addDayBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cmt_Text" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

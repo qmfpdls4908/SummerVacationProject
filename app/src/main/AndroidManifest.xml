@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- 권한 추가 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EarringDiary"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".setPartner"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".activity_day"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".PropensityTest"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".userPage"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".PhoneValidateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Regist_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adjust_day"
+            android:exported="false"
+            android:theme="@style/MaterialCustomRoot">
+        </activity>
+        <activity android:name=".CouplePage"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".PredictionActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".PostCreationActivity"
+            android:exported="false">
+        </activity>
+    </application>
+
+</manifest>

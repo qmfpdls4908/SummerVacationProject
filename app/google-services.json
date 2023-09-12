@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "484516693676",
+    "project_id": "earring-d6d96",
+    "storage_bucket": "earring-d6d96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:484516693676:android:d167f70af123f53dd44109",
+        "android_client_info": {
+          "package_name": "com.example.earringdiary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "484516693676-v1e9p7b72a15p9knf8504qht71cuv498.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.earringdiary",
+            "certificate_hash": "80ab2e47962076f4380c384b997d03f5015df4f3"
+          }
+        },
+        {
+          "client_id": "484516693676-9p2ho959qikarj4ekoo0b8n8r2vjf8tq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwu4ACGrJsEX3os3qlqViDgZK7GwwlrwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "484516693676-9p2ho959qikarj4ekoo0b8n8r2vjf8tq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
